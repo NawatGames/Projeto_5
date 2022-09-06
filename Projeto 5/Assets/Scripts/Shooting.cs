@@ -22,3 +22,7 @@ public class Shooting : MonoBehaviour
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse); // Adiciona força ao rb (rigid body) do objeto bullet
     }
 }
+
+// Comentarios:
+// Testar com script com movimento do player
+// firePointer não rotaciona com o mouse
