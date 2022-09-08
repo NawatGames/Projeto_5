@@ -25,4 +25,4 @@ public class Shooting : MonoBehaviour
 
 // Comentarios:
 // Testar com script com movimento do player
-// firePointer não rotaciona com o mouse
+// firePointer não rotaciona com o mouse ( Deve estar em função da rotação do player)
