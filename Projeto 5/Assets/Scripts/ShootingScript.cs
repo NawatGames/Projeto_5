@@ -11,7 +11,7 @@ public class ShootingScript : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public float bulletForce =  20f;
-    private float fireRate = 0.1f;
+    private float fireRate = 0.1f; //valor do firerate muda de arma p arma
     private float nextFire = 0f;
 
     // Update is called once per frame
