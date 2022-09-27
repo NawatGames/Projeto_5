@@ -1,5 +1,7 @@
 using UnityEngine;
 
+//https://www.youtube.com/watch?v=Dn_BUIVdAPg
+
 public class WeaponSwitchingScript : MonoBehaviour
 {
     public int selectedWeapon = 0;
