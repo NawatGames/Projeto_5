@@ -5,33 +5,32 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-   public float speed = 3f;
-   private Transform target;
+   [SerializeField] private float speed;
+   private GameObject player;
+   private bool isAlive = true;
+
+   private void Start()
+   {
+      player = GameObject.FindGameObjectWithTag("Player");
+   }
 
    private void Update()
    {
-      if (target != null)
+      if (player != null && isAlive)
       {
-         float step = speed * Time.deltaTime;
-         transform.position = Vector2.MoveTowards(transform.position, target.position, step);
-         
+         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
       }
    }
 
    private void OnTriggerEnter2D(Collider2D col)
    {
-      if (col.gameObject.tag == "Player")
+      if (col.CompareTag("Bullet"))
       {
-         target = col.transform;
-         Debug.Log("Target!");
+         Debug.Log("Colidiu com inimigo");
+         isAlive = false;
+         Destroy(gameObject,0.05f);
       }
    }
-
-   private void OnTriggerExit2D(Collider2D other)
-   {
-      if (other.gameObject.tag == "Player")
-      {
-         target = null;
-      }
-   }
+   
+   
 }
