@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem effect;
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Enemy"))
         {
+            Instantiate(effect, transform.position, transform.rotation);
             Debug.Log("Colidiu com inimigo");
             Destroy(gameObject);
         }
-
+    
     }
-}
+    }

@@ -26,11 +26,11 @@ public class Enemy : MonoBehaviour
    {
       if (col.CompareTag("Bullet"))
       {
-         Debug.Log("Colidiu com inimigo");
          isAlive = false;
          Destroy(gameObject,0.05f);
       }
+      
    }
-   
+
    
 }
