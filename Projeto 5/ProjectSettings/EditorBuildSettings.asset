@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ShopNPCTestScene.unity
     guid: ee67a04474e4b774aa959808b7e45961
+  - enabled: 1
+    path: Assets/Scenes/InventoryTestScene.unity
+    guid: 3a031faccf9743b47a0843d32d213805
   m_configObjects: {}

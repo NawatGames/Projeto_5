@@ -9,4 +9,12 @@ public class LeaveButtonScript : MonoBehaviour
     {
         SceneManager.LoadScene("ShopNPCTestScene");
     }
+
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("ShopNPCTestScene");
+        }
+    }
 }
