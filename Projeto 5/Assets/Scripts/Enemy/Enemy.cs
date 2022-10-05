@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
    [SerializeField] private float speed;
    private GameObject player;
    public GameObject coinPrefab;
+   [SerializeField] private float stoppingDistance;
    private bool isAlive = true;
 
    private void Start()
@@ -17,7 +18,7 @@ public class Enemy : MonoBehaviour
 
    private void Update()
    {
-      if (player != null && isAlive)
+      if (player != null && isAlive && Vector2.Distance(transform.position,player.GetComponent<Transform>().position) > stoppingDistance)
       {
          transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
       }
