@@ -10,7 +10,6 @@ public class BulletScript : MonoBehaviour
         if (col.CompareTag("Enemy"))
         {
             Instantiate(effect, transform.position, transform.rotation);
-            Debug.Log("Colidiu com inimigo");
             Destroy(gameObject);
         }
     

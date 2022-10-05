@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 {
    [SerializeField] private float speed;
    private GameObject player;
+   public GameObject coinPrefab;
    private bool isAlive = true;
 
    private void Start()
@@ -28,6 +29,7 @@ public class Enemy : MonoBehaviour
       {
          isAlive = false;
          Destroy(gameObject,0.05f);
+         Instantiate(coinPrefab, transform.position, transform.rotation);
       }
       
    }
