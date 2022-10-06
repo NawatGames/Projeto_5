@@ -8,20 +8,21 @@ public class Enemy : MonoBehaviour
    [Header("Stats")]
    [SerializeField] private float speed;
    [SerializeField] private float stoppingDistance;
-   [SerializeField] private float nearDistance;
    [SerializeField] private float startTimeBtwShots;
-   [SerializeField] private float timeBtwShots;
+   private float timeBtwShots;
    [SerializeField] private float retreatDistance;
-   [SerializeField] private bool isAlive = true;
+   private bool isAlive = true;
    
    
    [Header("References")]
    private Transform player;
    public GameObject coinPrefab;
+   public GameObject bullet;
 
    private void Start()
    {
       player = GameObject.FindGameObjectWithTag("Player").transform;
+      timeBtwShots = startTimeBtwShots;
    }
 
    private void Update()
@@ -36,6 +37,15 @@ public class Enemy : MonoBehaviour
       } else if (Vector2.Distance(transform.position, player.position) < retreatDistance)
       {
          transform.position = Vector2.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
+      }
+
+      if (timeBtwShots <= 0)
+      {
+         Instantiate(bullet, transform.position, Quaternion.identity);
+         timeBtwShots = startTimeBtwShots;
+      }else
+      {
+         timeBtwShots -= Time.deltaTime;
       }
    }
 
