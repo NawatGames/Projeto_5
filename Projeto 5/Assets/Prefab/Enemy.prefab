@@ -139,4 +139,4 @@ MonoBehaviour:
   startTimeBtwShots: 2
   retreatDistance: 4.5
   coinPrefab: {fileID: 8290486087171110280, guid: d1ed19206908ee54d99f3b07592a4644, type: 3}
-  bullet: {fileID: 6758117113267893714, guid: 271bddfbca6483346aaac91ff40a028a, type: 3}
+  bullet: {fileID: 2540992392671430729, guid: 271bddfbca6483346aaac91ff40a028a, type: 3}
