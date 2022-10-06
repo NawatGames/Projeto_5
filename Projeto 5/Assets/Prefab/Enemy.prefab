@@ -134,6 +134,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8ce040fb141db4b89641d4ed1ed208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
+  stoppingDistance: 5
+  nearDistance: 0
+  startTimeBtwShots: 0
+  timeBtwShots: 0
+  retreatDistance: 4.5
+  isAlive: 1
   coinPrefab: {fileID: 8290486087171110280, guid: d1ed19206908ee54d99f3b07592a4644, type: 3}
-  stoppingDistance: 4
