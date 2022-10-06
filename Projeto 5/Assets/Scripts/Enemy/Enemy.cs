@@ -10,6 +10,9 @@ public class Enemy : MonoBehaviour
    public GameObject coinPrefab;
    [SerializeField] private float stoppingDistance;
    private bool isAlive = true;
+   public float shootingRange;
+   public GameObject bullet;
+   public GameObject bulletParent;
 
    private void Start()
    {
