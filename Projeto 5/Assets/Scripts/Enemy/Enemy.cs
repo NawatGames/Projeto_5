@@ -47,17 +47,6 @@ public class Enemy : MonoBehaviour
          timeBtwShots -= Time.deltaTime;
       }
    }
-   /*
-   private void OnTriggerEnter2D(Collider2D col)
-   {
-      if (col.CompareTag("Bullet"))
-      {
-         isAlive = false;
-         Destroy(gameObject,0.05f);
-         Instantiate(coinPrefab, transform.position, transform.rotation);
-      }
-      
-   }
-*/
+   
    
 }
