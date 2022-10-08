@@ -16,9 +16,8 @@ public class Enemy : MonoBehaviour
    
    [Header("References")]
    private Transform player;
-   public GameObject coinPrefab;
    public GameObject bullet;
-
+   
    private void Start()
    {
       player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -27,7 +26,7 @@ public class Enemy : MonoBehaviour
 
    private void Update()
    {
-      if (isAlive && Vector2.Distance(transform.position,player.position) > stoppingDistance)
+      if (Vector2.Distance(transform.position,player.position) > stoppingDistance)
       {
          transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
       }else if (Vector2.Distance(transform.position, player.position) < stoppingDistance &&
@@ -38,7 +37,7 @@ public class Enemy : MonoBehaviour
       {
          transform.position = Vector2.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
       }
-
+      
       if (timeBtwShots <= 0)
       {
          Instantiate(bullet, transform.position, Quaternion.identity);
@@ -48,7 +47,7 @@ public class Enemy : MonoBehaviour
          timeBtwShots -= Time.deltaTime;
       }
    }
-
+   /*
    private void OnTriggerEnter2D(Collider2D col)
    {
       if (col.CompareTag("Bullet"))
@@ -59,6 +58,6 @@ public class Enemy : MonoBehaviour
       }
       
    }
-
+*/
    
 }

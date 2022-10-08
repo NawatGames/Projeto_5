@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2246665855120740097}
   - component: {fileID: 2246665855120740102}
   - component: {fileID: 2246665855120740098}
+  - component: {fileID: 2689461026405917042}
   - component: {fileID: 2246665855120740099}
   m_Layer: 0
   m_Name: Enemy
@@ -122,6 +123,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2689461026405917042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2246665855120740103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c097bdb449ff2194e99dfc85c47f6e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  coinPrefab: {fileID: 8290486087171110280, guid: d1ed19206908ee54d99f3b07592a4644, type: 3}
 --- !u!114 &2246665855120740099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,5 +153,4 @@ MonoBehaviour:
   stoppingDistance: 5
   startTimeBtwShots: 2
   retreatDistance: 4.5
-  coinPrefab: {fileID: 8290486087171110280, guid: d1ed19206908ee54d99f3b07592a4644, type: 3}
   bullet: {fileID: 2540992392671430729, guid: 271bddfbca6483346aaac91ff40a028a, type: 3}
