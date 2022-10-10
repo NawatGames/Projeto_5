@@ -6,9 +6,12 @@ using UnityEngine;
 
 public class EnemyBulletScript : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem effect;
     [SerializeField] private float speed;
     private Transform player;
     private Vector2 target;
+    [SerializeField] private float attackDamage;
+    
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -28,9 +31,12 @@ public class EnemyBulletScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player"))
-        {
-            DestroyBullet();
+        { 
+            col.gameObject.GetComponent<PlayerHealth>().UpdateHealth(-attackDamage);
+            Instantiate(effect, transform.position, transform.rotation);
+            Destroy(gameObject);
         }
+    
     }
 
     void DestroyBullet()

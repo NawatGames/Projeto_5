@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private float health = 0f;
-    [SerializeField] private float maxHealth = 100f;
+    [SerializeField] float health = 0f;
+    private float maxHealth = 100f;
 
     private void Start()
     {
@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
         }else if (health <= 0)
         {
             health = 0f;
+            Destroy(gameObject);
             Debug.Log("Player morreu!");
         }
     }

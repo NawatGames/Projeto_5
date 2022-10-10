@@ -25,7 +25,7 @@ public class EnemyHealth : MonoBehaviour
     }
 
 
-    public void updateHealth(float mod)
+    public void UpdateHealth(float mod)
     {
         health += mod;
 

@@ -19,7 +19,7 @@ public class BulletScript : MonoBehaviour
     {
         if (col.CompareTag("Enemy"))
         { 
-            col.gameObject.GetComponent<EnemyHealth>().updateHealth(-attackDamage);
+            col.gameObject.GetComponent<EnemyHealth>().UpdateHealth(-attackDamage);
             Instantiate(effect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
