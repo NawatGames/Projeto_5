@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 387610e2335fc334c98b829604a1d0ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
+  health: 0
 --- !u!1 &827713545
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +726,8 @@ MonoBehaviour:
   - {fileID: 253978907}
   - {fileID: 388905488}
   - {fileID: 1140999862}
+  time: 2
+  repeatRate: 2
   enemy: {fileID: 2246665855120740103, guid: 74c109523217ff241b0f4d3c37c44ea5, type: 3}
 --- !u!1 &1297711521
 GameObject:
