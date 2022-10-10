@@ -1,17 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
-using Random = System.Random;
+using Random = UnityEngine.Random;
 
 public class EnemyHealth : MonoBehaviour
 {
     private float health = 0f;
     [SerializeField] private float maxHealth = 100f;
-    [SerializeField] GameObject coinPrefab;
     [SerializeField] private GameObject[] drops;
-    private Random random = new Random();
     
 
     // Start is called before the first frame update
@@ -23,12 +21,7 @@ public class EnemyHealth : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (this.health == 0)
-        {
-            Invoke("randomDrop",1f);
-            Destroy(gameObject,0.1f);
-            
-        }
+        
     }
 
 
@@ -39,17 +32,19 @@ public class EnemyHealth : MonoBehaviour
         if (health <= 0)
         {
             this.health = 0;
+            RandomDrop();
+            Destroy(gameObject,0.1f);
             //Instantiate(coinPrefab, transform.position, Quaternion.identity);
 
         }
     }
     
 
-    void randomDrop()
+    void RandomDrop()
     {
-        int index = random.Next(0, drops.Length);
+        int index = Random.Range(0, drops.Length);
         Instantiate(drops[index], transform.position, transform.rotation);
-
         
     }
+    
 }

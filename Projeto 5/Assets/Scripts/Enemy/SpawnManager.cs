@@ -5,13 +5,15 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private Transform[] spawnPoints;
+    [SerializeField] private float time;
+    [SerializeField] private float repeatRate;
     
 
     [SerializeField] GameObject enemy;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnEnemies",1f,1f);
+        InvokeRepeating("SpawnEnemies",time,repeatRate);
     }
 
     void SpawnEnemies()

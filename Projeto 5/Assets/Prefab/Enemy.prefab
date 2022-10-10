@@ -136,10 +136,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  coinPrefab: {fileID: 8290486087171110280, guid: d1ed19206908ee54d99f3b07592a4644, type: 3}
   drops:
+  - {fileID: 2252616505919946361, guid: 7c0206ed831c7c443b74426f6aab6170, type: 3}
   - {fileID: 8290486087171110280, guid: d1ed19206908ee54d99f3b07592a4644, type: 3}
-  - {fileID: 8290486087171110280, guid: d1ed19206908ee54d99f3b07592a4644, type: 3}
+  - {fileID: 2252616505919946361, guid: 7c0206ed831c7c443b74426f6aab6170, type: 3}
+  - {fileID: 2252616505919946361, guid: 7c0206ed831c7c443b74426f6aab6170, type: 3}
 --- !u!114 &2246665855120740099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,6 +155,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   stoppingDistance: 5
-  startTimeBtwShots: 2
+  startTimeBtwShots: 1
   retreatDistance: 4.5
   bullet: {fileID: 2540992392671430729, guid: 271bddfbca6483346aaac91ff40a028a, type: 3}
