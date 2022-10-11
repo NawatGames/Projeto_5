@@ -9,4 +9,12 @@ public class InventoryButtonScript : MonoBehaviour
     {
         SceneManager.LoadScene("InventoryTestScene");
     }
+
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+        SceneManager.LoadScene("InventoryTestScene");
+        }
+    }
 }
