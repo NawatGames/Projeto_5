@@ -17,7 +17,7 @@ public class ButtonInfoScript : MonoBehaviour
        if(ShopManager.GetComponent<ShopManagerScript>().shopItems[4, ItemID] == 1)
         {
             PriceTXT.text = "Preço: " + ShopManager.GetComponent<ShopManagerScript>().shopItems[2, ItemID].ToString();
-            QuantityTXT.text = ShopManager.GetComponent<ShopManagerScript>().shopItems[3, ItemID].ToString();
+            QuantityTXT.text = StateNameController.sncconsumableqt.ToString();
             BoughtTXT.text = "";
         }
 

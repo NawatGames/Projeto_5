@@ -15,7 +15,7 @@ public class ShopManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CoinsTXT.text = "Moedas: " + coins.ToString();
+        CoinsTXT.text = "Moedas: " + StateNameController.snccoinqt.ToString();
 
         //ID
         shopItems[1,1] = 1;
@@ -24,7 +24,7 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[1,4] = 4;
         
         //Preço
-        shopItems[2,1] = 10;
+        shopItems[2,1] = 1;
         shopItems[2,2] = 20;
         shopItems[2,3] = 30;
         shopItems[2,4] = 40;
@@ -47,21 +47,22 @@ public class ShopManagerScript : MonoBehaviour
     public void Buy()
     {
         GameObject ButtonRef =  GameObject.FindGameObjectWithTag("Event").GetComponent<EventSystem>().currentSelectedGameObject;
-        if (coins >= shopItems[2, ButtonRef.GetComponent<ButtonInfoScript>().ItemID] && shopItems[4, ButtonRef.GetComponent<ButtonInfoScript>().ItemID] == 1)
+        if (StateNameController.snccoinqt >= shopItems[2, ButtonRef.GetComponent<ButtonInfoScript>().ItemID] && shopItems[4, ButtonRef.GetComponent<ButtonInfoScript>().ItemID] == 1)
         {
-            coins -= shopItems[2, ButtonRef.GetComponent<ButtonInfoScript>().ItemID];
+            StateNameController.snccoinqt -= shopItems[2, ButtonRef.GetComponent<ButtonInfoScript>().ItemID];
             shopItems[3, ButtonRef.GetComponent<ButtonInfoScript>().ItemID]++;
             ButtonRef.GetComponent<ButtonInfoScript>().QuantityTXT.text = shopItems[3, ButtonRef.GetComponent<ButtonInfoScript>().ItemID].ToString();
-            CoinsTXT.text = "Moedas: " + coins.ToString();
+            CoinsTXT.text = "Moedas: " + StateNameController.snccoinqt.ToString();
+            StateNameController.sncconsumableqt += shopItems[3, ButtonRef.GetComponent<ButtonInfoScript>().ItemID];
 
         }
 
-        if (coins >= shopItems[2, ButtonRef.GetComponent<ButtonInfoScript>().ItemID] && shopItems[4, ButtonRef.GetComponent<ButtonInfoScript>().ItemID] >= 2 && shopItems[3, ButtonRef.GetComponent<ButtonInfoScript>().ItemID] <= 0)
+        if (StateNameController.snccoinqt >= shopItems[2, ButtonRef.GetComponent<ButtonInfoScript>().ItemID] && shopItems[4, ButtonRef.GetComponent<ButtonInfoScript>().ItemID] >= 2 && shopItems[3, ButtonRef.GetComponent<ButtonInfoScript>().ItemID] <= 0)
         {
-            coins -= shopItems[2, ButtonRef.GetComponent<ButtonInfoScript>().ItemID];
+            StateNameController.snccoinqt -= shopItems[2, ButtonRef.GetComponent<ButtonInfoScript>().ItemID];
             shopItems[3, ButtonRef.GetComponent<ButtonInfoScript>().ItemID]++;
             ButtonRef.GetComponent<ButtonInfoScript>().QuantityTXT.text = shopItems[3, ButtonRef.GetComponent<ButtonInfoScript>().ItemID].ToString();
-            CoinsTXT.text = "Moedas: " + coins.ToString();
+            CoinsTXT.text = "Moedas: " + StateNameController.snccoinqt.ToString();
 
         }
     }

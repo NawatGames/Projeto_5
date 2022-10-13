@@ -9,7 +9,6 @@ public class WeaponBody : MonoBehaviour
     //https://www.youtube.com/watch?v=1nFNOyCalzo adaptado
     
     public bool PlayerClose;
-    public PlayerGearInfo PlayerGear;
     public GameObject DialoguePanel2;
     public Text DialogueText2;
     public string[] dialogue;
@@ -36,7 +35,7 @@ public class WeaponBody : MonoBehaviour
             if(WeaponTypeID.Equals(1))
             {
                 //Debug.Log("Pistola");
-                PlayerGear.Weapon1ID = 1;
+                StateNameController.sncweapon1ID = 1;
                 Destroy(gameObject);
                 DialoguePanel2.SetActive(false);
             }
@@ -44,7 +43,7 @@ public class WeaponBody : MonoBehaviour
             if(WeaponTypeID.Equals(2))
             {
                 //Debug.Log("Shotgun");
-                PlayerGear.Weapon1ID = 2;
+                StateNameController.sncweapon1ID = 2;
                 Destroy(gameObject);
                 DialoguePanel2.SetActive(false);
             }
@@ -52,7 +51,7 @@ public class WeaponBody : MonoBehaviour
             if(WeaponTypeID.Equals(3))
             {
                 //Debug.Log("Rifle");
-                PlayerGear.Weapon1ID = 3;
+                StateNameController.sncweapon1ID = 3;
                 Destroy(gameObject);
                 DialoguePanel2.SetActive(false);
             }
@@ -63,7 +62,7 @@ public class WeaponBody : MonoBehaviour
             if(WeaponTypeID.Equals(1))
             {
                 //Debug.Log("Pistola");
-                PlayerGear.Weapon2ID = 1;
+                StateNameController.sncweapon2ID = 1;
                 Destroy(gameObject);
                 DialoguePanel2.SetActive(false);
             }
@@ -71,7 +70,7 @@ public class WeaponBody : MonoBehaviour
             if(WeaponTypeID.Equals(2))
             {
                 //Debug.Log("Shotgun");
-                PlayerGear.Weapon2ID = 2;
+                StateNameController.sncweapon2ID = 2;
                 Destroy(gameObject);
                 DialoguePanel2.SetActive(false);
             }
@@ -79,7 +78,7 @@ public class WeaponBody : MonoBehaviour
             if(WeaponTypeID.Equals(3))
             {
                 //Debug.Log("Rifle");
-                PlayerGear.Weapon2ID = 3;
+                StateNameController.sncweapon2ID = 3;
                 Destroy(gameObject);
                 DialoguePanel2.SetActive(false);
             }
