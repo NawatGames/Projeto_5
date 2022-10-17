@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
         {
             if (getShotgun == true)
             {
+                col.gameObject.GetComponent<ShotgunDrop>().destroyObject();
                 shotgun.transform.parent = gameObject.transform;
                 shotgun.transform.position = gameObject.transform.position;
                 getShotgun = false;

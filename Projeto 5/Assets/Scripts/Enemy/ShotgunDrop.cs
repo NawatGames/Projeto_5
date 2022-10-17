@@ -5,11 +5,8 @@ using UnityEngine;
 
 public class ShotgunDrop : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D col)
+    public void destroyObject()
     {
-        if (col.CompareTag("Player"))
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 }
