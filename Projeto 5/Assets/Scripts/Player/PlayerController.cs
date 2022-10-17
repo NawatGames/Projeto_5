@@ -7,10 +7,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] int balance = 0;
-
     [SerializeField] private GameObject rifle;
     [SerializeField] private GameObject shotgun;
     [SerializeField] private GameObject pistol;
+    [SerializeField] private Transform rifleDrop;
+    [SerializeField] private Transform shotgunDrop;
     private bool getRifle = true;
     private bool getShotgun = true;
     private bool withRifle = false;
@@ -86,5 +87,4 @@ public class PlayerController : MonoBehaviour
         }
       
     }
-    
 }

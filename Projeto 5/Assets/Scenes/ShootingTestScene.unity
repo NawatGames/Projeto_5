@@ -541,11 +541,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ae39741a5c89f4c859653504dfbe28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guns: []
   balance: 0
   rifle: {fileID: 1411535463}
   shotgun: {fileID: 827713545}
   pistol: {fileID: 1297711521}
+  rifleDrop: {fileID: 3139095899660440149, guid: 91c370202ef9e0949a1f53f44b022f83, type: 3}
+  shotgunDrop: {fileID: 7063679414078650455, guid: b4a1131ce08f23246b1b073f1eb166fc, type: 3}
 --- !u!58 &712613583
 CircleCollider2D:
   m_ObjectHideFlags: 0
