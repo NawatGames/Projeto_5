@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
         }
 
         if (col.CompareTag("Rifle")) { 
-            if (getRifle == true) {
+            if (getRifle == true && withShotgun == false) {
                 
                 col.gameObject.GetComponent<RifleDrop>().destroyObject();
                 rifle.transform.parent = gameObject.transform;
@@ -45,13 +45,14 @@ public class PlayerController : MonoBehaviour
                 withRifle = true;
             }else if (getRifle == false)
             {
-                Debug.Log("Ja tem essa arma"); // Adicionar munição
+                col.gameObject.GetComponent<RifleDrop>().destroyObject();
+                Debug.Log("Munição"); // Adicionar munição
             }
             
             
         }else if (col.CompareTag("Shotgun"))
         {
-            if (getShotgun == true)
+            if (getShotgun == true && withRifle == false)
             {
                 col.gameObject.GetComponent<ShotgunDrop>().destroyObject();
                 shotgun.transform.parent = gameObject.transform;
@@ -60,7 +61,8 @@ public class PlayerController : MonoBehaviour
                 withRifle = true;
             }else if (getShotgun == false)
             {
-                Debug.Log("Ja tem essa arma (shotgun)"); // Adicionar munição
+                col.gameObject.GetComponent<ShotgunDrop>().destroyObject();
+                Debug.Log("Munição"); // Adicionar munição
             }
             
         }
