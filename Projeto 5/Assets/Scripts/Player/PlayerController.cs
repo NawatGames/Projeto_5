@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] GameObject[] guns;
     [SerializeField] int balance = 0;
 
     [SerializeField] private GameObject rifle;
@@ -26,14 +25,23 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update(){
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown(KeyCode.E))
         {
+            Debug.Log("Tecla E pressionada");
             if (withRifle == true)
             {
+                rifle.SetActive(false);
                 rifle.transform.parent = null;
                 pistol.SetActive(true);
                 withRifle = false;
                 getRifle = true;
+            }else if (withShotgun == true)
+            {
+                shotgun.SetActive(false);
+                shotgun.transform.parent = null;
+                pistol.SetActive(true);
+                withShotgun = false;
+                getShotgun = true;
             }
         }
     
