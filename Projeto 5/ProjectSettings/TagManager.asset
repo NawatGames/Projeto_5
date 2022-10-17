@@ -9,6 +9,7 @@ TagManager:
   - Coin
   - EnemyBullet
   - Rifle
+  - Shotgun
   layers:
   - Default
   - TransparentFX

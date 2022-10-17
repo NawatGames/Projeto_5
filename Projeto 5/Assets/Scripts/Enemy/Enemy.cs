@@ -11,12 +11,12 @@ public class Enemy : MonoBehaviour
    [SerializeField] private float startTimeBtwShots;
    private float timeBtwShots;
    [SerializeField] private float retreatDistance;
-   private bool isAlive = true;
    
    
    [Header("References")]
    private Transform player;
    public GameObject bullet;
+   //[SerializeField] private Transform firePoint;
    
    private void Start()
    {
@@ -40,7 +40,7 @@ public class Enemy : MonoBehaviour
       
       if (timeBtwShots <= 0)
       {
-         Instantiate(bullet, transform.position, Quaternion.identity);
+         Instantiate(bullet, transform.position,Quaternion.identity);
          timeBtwShots = startTimeBtwShots;
       }else
       {

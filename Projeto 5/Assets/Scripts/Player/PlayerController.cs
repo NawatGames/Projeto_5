@@ -10,6 +10,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] int balance = 0;
 
     [SerializeField] private GameObject rifle;
+    private bool getRifle = true;
+    private bool getShotgun = true;
+
+    [SerializeField] private GameObject shotgun;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,9 +34,28 @@ public class PlayerController : MonoBehaviour
 
         if (col.CompareTag("Rifle"))
         {
-            rifle.transform.parent = gameObject.transform;
-            rifle.transform.position = gameObject.transform.position;
+            if (getRifle == true)
+            {
+                rifle.transform.parent = gameObject.transform;
+                rifle.transform.position = gameObject.transform.position;
+                getRifle = false;
+            }else if (getRifle == false)
+            {
+              Debug.Log("Ja tem essa arma"); // Adicionar munição
+            }
 
+        }else if (col.CompareTag("Shotgun"))
+        {
+            if (getShotgun == true)
+            {
+                shotgun.transform.parent = gameObject.transform;
+                shotgun.transform.position = gameObject.transform.position;
+                getShotgun = false;
+            }else if (getShotgun == false)
+            {
+                Debug.Log("Ja tem essa arma (shotgun)"); // Adicionar munição
+            }
+            
         }
       
     }
