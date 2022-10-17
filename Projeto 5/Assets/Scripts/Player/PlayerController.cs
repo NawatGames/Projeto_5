@@ -10,13 +10,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] int balance = 0;
 
     [SerializeField] private GameObject rifle;
+    [SerializeField] private GameObject shotgun;
+    [SerializeField] private GameObject pistol;
     private bool getRifle = true;
     private bool getShotgun = true;
     private bool withRifle = false;
     private bool withShotgun = false;
-    private Collider2D col;
 
-    [SerializeField] private GameObject shotgun;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,17 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
-    
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            if (withRifle == true)
+            {
+                rifle.transform.parent = null;
+                pistol.SetActive(true);
+                withRifle = false;
+                getRifle = true;
+            }
+        }
     
     }
     private void OnTriggerEnter2D(Collider2D col)
@@ -58,7 +68,7 @@ public class PlayerController : MonoBehaviour
                 shotgun.transform.parent = gameObject.transform;
                 shotgun.transform.position = gameObject.transform.position;
                 getShotgun = false;
-                withRifle = true;
+                withShotgun = true;
             }else if (getShotgun == false)
             {
                 col.gameObject.GetComponent<ShotgunDrop>().destroyObject();

@@ -545,6 +545,7 @@ MonoBehaviour:
   balance: 0
   rifle: {fileID: 1411535463}
   shotgun: {fileID: 827713545}
+  pistol: {fileID: 1297711521}
 --- !u!58 &712613583
 CircleCollider2D:
   m_ObjectHideFlags: 0
