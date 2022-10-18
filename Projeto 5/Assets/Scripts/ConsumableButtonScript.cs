@@ -9,8 +9,11 @@ public class ConsumableButtonScript : MonoBehaviour
 
     public void Heal()
     {
-        StateNameController.snchp += 50;
-        StateNameController.sncconsumableqt -= 1;
+        if(StateNameController.sncconsumableqt > 0)
+        {
+            StateNameController.snchp += 50;
+            StateNameController.sncconsumableqt -= 1;
+        }
     }
 
     private void Start()
