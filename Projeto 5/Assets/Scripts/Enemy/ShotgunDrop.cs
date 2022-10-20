@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletScript : MonoBehaviour
+public class ShotgunDrop : MonoBehaviour
 {
-    void OnCollisionEnter2D(Collision2D collision)
+    public void destroyObject()
     {
         Destroy(gameObject);
     }
