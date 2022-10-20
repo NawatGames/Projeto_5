@@ -4,14 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy
-  - Bullet
-  - Coin
-  - EnemyBullet
-  - Rifle
-  - Shotgun
-  - Pistol
   - Event
+  - Pistol
   layers:
   - Default
   - TransparentFX
