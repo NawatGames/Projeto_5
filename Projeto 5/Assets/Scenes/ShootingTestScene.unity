@@ -660,7 +660,7 @@ GameObject:
   - component: {fileID: 827713550}
   - component: {fileID: 827713551}
   m_Layer: 0
-  m_Name: Shotgun
+  m_Name: Shotgun_Def
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1044,7 +1044,7 @@ GameObject:
   - component: {fileID: 1297711526}
   - component: {fileID: 1297711527}
   m_Layer: 0
-  m_Name: Pistol
+  m_Name: Pistol_Def
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1182,7 +1182,7 @@ GameObject:
   - component: {fileID: 1411535468}
   - component: {fileID: 1411535469}
   m_Layer: 0
-  m_Name: Rifle
+  m_Name: Rifle_Def
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
