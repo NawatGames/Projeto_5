@@ -10,6 +10,8 @@ TagManager:
   - EnemyBullet
   - Rifle
   - Shotgun
+  - Pistol
+  - Event
   layers:
   - Default
   - TransparentFX
