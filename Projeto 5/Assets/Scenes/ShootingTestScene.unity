@@ -782,7 +782,7 @@ MonoBehaviour:
   firePoint: {fileID: 384764453}
   firePoint2: {fileID: 112237833}
   firePoint3: {fileID: 1426862586}
-  bulletPrefab: {fileID: 8023947935461897744, guid: 2209b0509130f6040b39b4c6bf92e517, type: 3}
+  bulletPrefab: {fileID: 1686837791498172898, guid: 096ed209524c62944b534d777c4fe9d6, type: 3}
   bulletForce: 20
 --- !u!114 &827713551
 MonoBehaviour:
@@ -1150,7 +1150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 1550966730}
-  bulletPrefab: {fileID: 8023947935461897744, guid: 2209b0509130f6040b39b4c6bf92e517, type: 3}
+  bulletPrefab: {fileID: 1686837791498172898, guid: 096ed209524c62944b534d777c4fe9d6, type: 3}
   bulletForce: 20
 --- !u!114 &1297711527
 MonoBehaviour:
@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 2116305282}
-  bulletPrefab: {fileID: 8023947935461897744, guid: 2209b0509130f6040b39b4c6bf92e517, type: 3}
+  bulletPrefab: {fileID: 1686837791498172898, guid: 096ed209524c62944b534d777c4fe9d6, type: 3}
   bulletForce: 20
 --- !u!114 &1411535469
 MonoBehaviour:
