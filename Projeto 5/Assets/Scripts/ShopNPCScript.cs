@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,8 +13,14 @@ public class ShopNPCScript : MonoBehaviour
     public GameObject DialoguePanel;
     public Text DialogueText;
     public string[] dialogue;
+    public string sceneName;
+    
 
-
+    private void Start()
+    {
+        sceneName = SceneManager.GetActiveScene().name;
+        StateNameController.snc_scene = sceneName;
+    }
 
     void Update()
     {
