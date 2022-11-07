@@ -9,6 +9,7 @@ public class BulletScript : MonoBehaviour
     [SerializeField] float attackDamage = 20f;
     [SerializeField] private float maxDistance = 10f;
     private Transform player;
+    
 
     private void Update()
     {
@@ -22,6 +23,13 @@ public class BulletScript : MonoBehaviour
             col.gameObject.GetComponent<EnemyHealth>().UpdateHealth(-attackDamage);
             Instantiate(effect, transform.position, transform.rotation);
             Destroy(gameObject);
+        }
+
+        if (col.CompareTag("Wall"))
+        {
+            Destroy(gameObject);
+            Instantiate(effect, transform.position, transform.rotation);
+            
         }
     
     }
