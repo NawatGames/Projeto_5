@@ -38,6 +38,12 @@ public class EnemyBulletScript : MonoBehaviour
             Instantiate(effect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
+
+        if (col.CompareTag("Wall"))
+        {
+            Instantiate(effect, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
     
     }
 

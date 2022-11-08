@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Event
   - Pistol
+  - Enemy
+  - Bullet
+  - Rifle
+  - Shotgun
+  - Coin
+  - Wall
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX

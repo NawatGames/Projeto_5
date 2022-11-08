@@ -7,14 +7,14 @@ public class LeaveButtonScript : MonoBehaviour
 {
     public void LoadScene()
     {
-        SceneManager.LoadScene("ShopNPCTestScene");
+        SceneManager.LoadScene(StateNameController.snc_scene);
     }
 
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("ShopNPCTestScene");
+            SceneManager.LoadScene(StateNameController.snc_scene);
         }
     }
 }
