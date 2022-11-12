@@ -8,7 +8,7 @@ public class PlayerSpriteChanger : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha0))
+        if(Input.GetKeyDown(KeyCode.W))
         {
             GetComponent<SpriteRenderer>().sprite = faceUp;
         }
@@ -20,12 +20,12 @@ public class PlayerSpriteChanger : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.S))
         {
-            GetComponent<SpriteRenderer>().sprite = faceRight;
+            GetComponent<SpriteRenderer>().sprite = faceDown;
         }
 
         if(Input.GetKeyDown(KeyCode.D))
         {
-            GetComponent<SpriteRenderer>().sprite = faceDown;
+            GetComponent<SpriteRenderer>().sprite = faceRight;
         }
     }
 }

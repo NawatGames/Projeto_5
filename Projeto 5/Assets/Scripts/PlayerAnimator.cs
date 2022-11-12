@@ -16,6 +16,7 @@ public class PlayerAnimator : MonoBehaviour
         if(Input.GetKey(KeyCode.W))
         {
             MovingUp = true;
+            Debug.Log("cima");
         }
 
         else
