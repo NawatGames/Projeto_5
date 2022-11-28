@@ -4,24 +4,36 @@ using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour
 {
-    public bool MovingUp;
-
+    private Animator mAnimator;
+    
     void Start()
     {
-        MovingUp = false;
+        mAnimator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.W))
+        if(mAnimator != null)
         {
-            MovingUp = true;
-            Debug.Log("cima");
-        }
+            if(Input.GetKeyDown(KeyCode.W))
+            {
+                mAnimator.SetTrigger("WalkUp");
+            }
 
-        else
-        {
-            MovingUp = false;
+            if(Input.GetKeyDown(KeyCode.A))
+            {
+                mAnimator.SetTrigger("WalkLeft");
+            }
+
+            if(Input.GetKeyDown(KeyCode.S))
+            {
+                mAnimator.SetTrigger("WalkDown");
+            }
+
+            if(Input.GetKeyDown(KeyCode.D))
+            {
+                mAnimator.SetTrigger("WalkRight");
+            }
         }
     }
 }
