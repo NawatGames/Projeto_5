@@ -27,5 +27,10 @@ public class PlayerAnimator2 : MonoBehaviour
         {
             protag.GetComponent<Animator>().Play("Protag_Pistol_Walk_Right");
         }
+
+        //else
+        //{
+        //    protag.GetComponent<Animator>().Play("Protag_Idle_Down"); 
+        //}
     }
 }
