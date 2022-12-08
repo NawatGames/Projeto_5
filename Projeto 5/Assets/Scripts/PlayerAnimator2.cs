@@ -28,9 +28,24 @@ public class PlayerAnimator2 : MonoBehaviour
             protag.GetComponent<Animator>().Play("Protag_Pistol_Walk_Right");
         }
 
-        //else
-        //{
-        //    protag.GetComponent<Animator>().Play("Protag_Idle_Down"); 
-        //}
+        if(Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.W))
+        {
+            protag.GetComponent<Animator>().Play("Protag_Pistol_Walk_Right");
+        }
+
+        if(Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.W))
+        {
+            protag.GetComponent<Animator>().Play("Protag_Pistol_Walk_Left");
+        }
+
+        if(Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.S))
+        {
+            protag.GetComponent<Animator>().Play("Protag_Pistol_Walk_Right");
+        }
+
+        if(Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S))
+        {
+            protag.GetComponent<Animator>().Play("Protag_Pistol_Walk_Left");
+        }
     }
 }
