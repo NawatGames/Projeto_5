@@ -13,6 +13,7 @@ TagManager:
   - Coin
   - Wall
   - EnemyBullet
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
