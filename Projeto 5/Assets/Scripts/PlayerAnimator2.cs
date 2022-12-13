@@ -8,22 +8,22 @@ public class PlayerAnimator2 : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetKey(KeyCode.W))
+        if(Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
         {
             protag.GetComponent<Animator>().Play("Protag_Pistol_Walk_Up");
         }
 
-        if(Input.GetKey(KeyCode.A))
+        if(Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.W)  && !Input.GetKey(KeyCode.S))
         {
             protag.GetComponent<Animator>().Play("Protag_Pistol_Walk_Left");
         }
 
-        if(Input.GetKey(KeyCode.S))
+        if(Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
         {
             protag.GetComponent<Animator>().Play("Protag_Pistol_Walk_Down");
         }
 
-        if(Input.GetKey(KeyCode.D))
+        if(Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
         {
             protag.GetComponent<Animator>().Play("Protag_Pistol_Walk_Right");
         }
@@ -46,6 +46,11 @@ public class PlayerAnimator2 : MonoBehaviour
         if(Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S))
         {
             protag.GetComponent<Animator>().Play("Protag_Pistol_Walk_Left");
+        }
+
+        if(!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.S))
+        {
+            protag.GetComponent<Animator>().StopPlayback();
         }
     }
 }
