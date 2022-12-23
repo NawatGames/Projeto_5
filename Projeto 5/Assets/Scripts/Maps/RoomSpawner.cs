@@ -55,8 +55,16 @@ public class RoomSpawner: MonoBehaviour
                 Instantiate(templates.rightRooms[rand],transform.position,templates.rightRooms[rand].transform.rotation);
 
             }
+
+            if (templates.rooms.Count >= 15)
+            {
+                spawned = true;
+            }
+            else
+            {
+                spawned = false;
+            }
             
-            spawned = true;
         }
         
     }
