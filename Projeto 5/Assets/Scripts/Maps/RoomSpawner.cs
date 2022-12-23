@@ -15,11 +15,12 @@ public class RoomSpawner: MonoBehaviour
     private RoomTemplates templates;
     private int rand;
     private bool spawned = false;
+    public float wait 
 
     private void Start()
     {
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
-        Invoke("Spawn",3.0f);
+        Invoke("Spawn",0.2f);
     }
 
     private void Spawn()
@@ -53,7 +54,7 @@ public class RoomSpawner: MonoBehaviour
                 Instantiate(templates.rightRooms[rand],transform.position,templates.rightRooms[rand].transform.rotation);
 
             }
-            Debug.Log("Chega aq");
+            
             spawned = true;
         }
         
@@ -61,9 +62,15 @@ public class RoomSpawner: MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("SpawnPoint") && other.GetComponent<RoomSpawner>().spawned == true)
+        if (other.CompareTag("SpawnPoint"))
         {
-            Destroy(gameObject);
+            if (other.GetComponent<RoomSpawner>().spawned == false && spawned == false)
+            {
+                Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
+                Destroy(gameObject);
+            }
+
+            spawned = true;
         }  
     }
 }

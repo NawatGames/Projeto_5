@@ -15,6 +15,7 @@ TagManager:
   - EnemyBullet
   - SpawnPoint
   - Rooms
+  - EntryRoom
   layers:
   - Default
   - TransparentFX
