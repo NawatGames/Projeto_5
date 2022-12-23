@@ -328,7 +328,7 @@ MonoBehaviour:
   - {fileID: 2182749074395659462, guid: e6da16e962827e9489672d8b8d1d9322, type: 3}
   rooms: []
   closedRoom: {fileID: 4215034220196094674, guid: 17403c999a029bf4ab6a3089a0effee4, type: 3}
-  waitTime: 3
+  waitTime: 5
   boss: {fileID: 2246665855120740103, guid: 74c109523217ff241b0f4d3c37c44ea5, type: 3}
 --- !u!4 &2049543356
 Transform:
