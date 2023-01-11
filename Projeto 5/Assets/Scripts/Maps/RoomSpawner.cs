@@ -56,16 +56,10 @@ public class RoomSpawner: MonoBehaviour
 
             }
 
-            if (templates.rooms.Count >= 15)
-            {
-                spawned = true;
-            }
-            else
-            {
-                spawned = false;
-            }
-            
+            spawned = true;
+
         }
+        
         
     }
 
