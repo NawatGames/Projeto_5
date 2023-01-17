@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 9122846838329502658}
   - component: {fileID: 3754892637517349240}
   m_Layer: 0
-  m_Name: ChangeRoomPoint
+  m_Name: FirstPoint
   m_TagString: ChangeRoomPoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -119,7 +119,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4539563486034701930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.28, y: -0.06, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8834084238826348210}
@@ -555,7 +555,7 @@ GameObject:
   - component: {fileID: 2077859850830968210}
   - component: {fileID: 4310912733188404976}
   m_Layer: 0
-  m_Name: ChangeRoomPoint (1)
+  m_Name: EndPoint
   m_TagString: ChangeRoomPoint
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -569,7 +569,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5594131657031461014}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.49, y: -0.06, z: 0}
+  m_LocalPosition: {x: 0, y: 13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8834084238826348210}
