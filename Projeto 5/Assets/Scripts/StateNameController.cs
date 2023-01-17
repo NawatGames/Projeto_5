@@ -11,4 +11,7 @@ public class StateNameController : MonoBehaviour
     public static int snccoinqt;
     public static int snchp;
     public static string snc_scene;
+    public static int sncfirerate;
+    public static int sncdamage;
+    public static int sncfirepoint;
 }

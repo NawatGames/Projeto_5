@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ProtagTest.unity
     guid: bb22ef4cdcf6aa24fb7dbf6812961da0
+  - enabled: 1
+    path: Assets/Scenes/WeaponUpgradeScene.unity
+    guid: 0783ba91ac455d94284bfb8f7b782ef7
   m_configObjects: {}

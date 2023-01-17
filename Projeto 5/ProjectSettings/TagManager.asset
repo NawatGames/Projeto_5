@@ -13,6 +13,9 @@ TagManager:
   - Coin
   - Wall
   - EnemyBullet
+  - FireRateUpgrade
+  - DamageUpgrade
+  - FirePoint
   layers:
   - Default
   - TransparentFX
