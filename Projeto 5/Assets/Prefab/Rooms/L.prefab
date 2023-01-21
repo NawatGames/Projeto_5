@@ -5611,6 +5611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endPoint: {fileID: 1739886206190906617}
+  direction: 4
 --- !u!1 &8022827986554524974
 GameObject:
   m_ObjectHideFlags: 0

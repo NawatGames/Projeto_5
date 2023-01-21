@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endPoint: {fileID: 6785128308772848092}
+  direction: 2
 --- !u!1 &2417046280803429433
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endPoint: {fileID: 1300645775999483536}
+  direction: 1
 --- !u!1 &6563533416571247050
 GameObject:
   m_ObjectHideFlags: 0
