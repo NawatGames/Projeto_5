@@ -13,10 +13,6 @@ TagManager:
   - Coin
   - Wall
   - EnemyBullet
-  - SpawnPoint
-  - Rooms
-  - EntryRoom
-  - ChangeRoomPoint
   layers:
   - Default
   - TransparentFX
