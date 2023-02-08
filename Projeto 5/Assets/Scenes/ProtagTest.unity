@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 203756279}
   - component: {fileID: 203756281}
   - component: {fileID: 203756280}
+  - component: {fileID: 203756282}
   m_Layer: 0
   m_Name: EnemyShotgun
   m_TagString: Enemy
@@ -286,8 +287,23 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.22, y: 0.47}
+  m_Size: {x: 0.2, y: 0.47}
   m_Direction: 0
+--- !u!114 &203756282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203756275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c097bdb449ff2194e99dfc85c47f6e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  drops:
+  - {fileID: 8290486087171110280, guid: d1ed19206908ee54d99f3b07592a4644, type: 3}
 --- !u!1 &242123860
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,6 +1756,7 @@ GameObject:
   - component: {fileID: 1966151073}
   - component: {fileID: 1966151074}
   - component: {fileID: 1966151075}
+  - component: {fileID: 1966151076}
   m_Layer: 0
   m_Name: Protag
   m_TagString: Player
@@ -1921,6 +1938,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomizer: 0
+--- !u!114 &1966151076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966151067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 387610e2335fc334c98b829604a1d0ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 200
 --- !u!1 &2077923545
 GameObject:
   m_ObjectHideFlags: 0
