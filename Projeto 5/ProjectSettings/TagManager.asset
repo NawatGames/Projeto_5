@@ -17,6 +17,9 @@ TagManager:
   - Rooms
   - EntryRoom
   - ChangeRoomPoint
+  - FireRateUpgrade
+  - DamageUpgrade
+  - FirePoint
   layers:
   - Default
   - TransparentFX
