@@ -26,10 +26,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: 2121b3f796eec0347b6150727d2f91a9
-  - enabled: 1
-    path: Assets/Scenes/DungeonGenerator.unity
-    guid: c58aca85c26a111429fba0495ad9a289
-  - enabled: 1
-    path: Assets/Scenes/Tilemap_10.unity
-    guid: 35a40c7e48d32404298465ae2f6eab17
   m_configObjects: {}
