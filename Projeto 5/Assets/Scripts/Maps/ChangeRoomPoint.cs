@@ -32,7 +32,7 @@ public class ChangeRoomPoint : MonoBehaviour
             {
                 Camera.main.transform.position = new Vector3(Camera.main.transform.position.x - 0.5f , Camera.main.transform.position.y,
                     Camera.main.transform.position.z);
-                yield return new WaitForSeconds(0.005f);
+                yield return new WaitForSeconds(0.0005f);
             
             }
             Debug.Log("Lado Esquerdo");
@@ -43,7 +43,7 @@ public class ChangeRoomPoint : MonoBehaviour
             {
                 Camera.main.transform.position = new Vector3(Camera.main.transform.position.x + 0.5f , Camera.main.transform.position.y,
                     Camera.main.transform.position.z);
-                yield return new WaitForSeconds(0.005f);
+                yield return new WaitForSeconds(0.0005f);
             
             }
                 
@@ -55,7 +55,7 @@ public class ChangeRoomPoint : MonoBehaviour
             {
                 Camera.main.transform.position = new Vector3(Camera.main.transform.position.x , Camera.main.transform.position.y - 0.5f,
                     Camera.main.transform.position.z);
-                yield return new WaitForSeconds(0.00875f);
+                yield return new WaitForSeconds(0.000875f);
             
             }
             Debug.Log("Lado Inferior");
@@ -67,7 +67,7 @@ public class ChangeRoomPoint : MonoBehaviour
                 Camera.main.transform.position = new Vector3(Camera.main.transform.position.x,
                     Camera.main.transform.position.y + 0.5f,
                     Camera.main.transform.position.z);
-                yield return new WaitForSeconds(0.00875f);
+                yield return new WaitForSeconds(0.000875f);
                 Debug.Log("Lado Superior");
             }
         }

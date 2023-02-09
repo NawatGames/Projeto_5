@@ -7,11 +7,10 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour
 {
     [SerializeField] private ParticleSystem effect;
-    [SerializeField] float attackDamage = 20f;
-    [SerializeField] private float maxDistance = 10f;
+    [SerializeField] float attackDamage;
     private Transform player;
-    
-    
+
+ 
 
     private void OnTriggerEnter2D(Collider2D col)
     {
@@ -29,5 +28,9 @@ public class BulletScript : MonoBehaviour
             Instantiate(effect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
+    }
+    private void Update()
+    {
+        attackDamage = StateNameController.sncdamage;
     }
 }

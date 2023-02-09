@@ -43,7 +43,7 @@ public class EnemyHealth : MonoBehaviour
     void RandomDrop()
     {
         rand = UnityEngine.Random.Range(0, 100);
-        if (rand < 30)
+        if (rand < 40)
         {
             Instantiate(drops[0], transform.position, transform.rotation);
         }

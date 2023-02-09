@@ -137,9 +137,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  stoppingDistance: 15
+  stoppingDistance: 20
   startTimeBtwShots: 1.5
-  retreatDistance: 4
+  retreatDistance: 0
   firepoint: {fileID: 6997018188500905487}
   bullet: {fileID: 2540992392671430729, guid: 271bddfbca6483346aaac91ff40a028a, type: 3}
 --- !u!114 &2882934142068161667

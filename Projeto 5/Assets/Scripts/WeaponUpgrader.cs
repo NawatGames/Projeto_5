@@ -10,7 +10,7 @@ public class WeaponUpgrader : MonoBehaviour
     void Start()
     {
         StateNameController.sncfirerate = 1.00f;
-        StateNameController.sncdamage = 1;
+        StateNameController.sncdamage = 20f;
         StateNameController.sncfirepoint = 1;
     }
 

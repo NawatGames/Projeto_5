@@ -12,6 +12,7 @@ public class EnemyBulletScript : MonoBehaviour
     private Vector2 direction;
     private Vector2 target;
     [SerializeField] private float attackDamage;
+    public static bool isDashing = false;
     
     void Start()
     {
@@ -34,9 +35,12 @@ public class EnemyBulletScript : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         { 
-            col.gameObject.GetComponent<PlayerHealth>().UpdateHealth(-attackDamage);
-            Instantiate(effect, transform.position, transform.rotation);
-            Destroy(gameObject);
+            if (!isDashing)
+            {
+                col.gameObject.GetComponent<PlayerHealth>().UpdateHealth(-attackDamage);
+                Instantiate(effect, transform.position, transform.rotation);
+                Destroy(gameObject);
+            }
         }
 
         if (col.CompareTag("Wall"))

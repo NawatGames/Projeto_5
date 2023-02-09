@@ -6,32 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/ShopTestScene.unity
-    guid: 1c5dae0b2ab00b24fb8cd60cca5f2846
-  - enabled: 1
-    path: Assets/Scenes/ShopNPCTestScene.unity
-    guid: ee67a04474e4b774aa959808b7e45961
-  - enabled: 1
-    path: Assets/Scenes/InventoryTestScene.unity
-    guid: 3a031faccf9743b47a0843d32d213805
+    path: Assets/Scenes/StartMenu.unity
+    guid: 2121b3f796eec0347b6150727d2f91a9
   - enabled: 1
     path: Assets/Scenes/SettingsMenu.unity
     guid: 9ecc2be0b0285664c8f0231de4c8da7c
   - enabled: 1
     path: Assets/Scenes/PauseMenu.unity
     guid: e5e9839df9cb2eb4e8c7976935383096
-  - enabled: 1
-    path: Assets/Scenes/StartMenu.unity
-    guid: 2121b3f796eec0347b6150727d2f91a9
-  - enabled: 1
-    path: Assets/Scenes/ProtagTest.unity
-    guid: bb22ef4cdcf6aa24fb7dbf6812961da0
-  - enabled: 1
-    path: Assets/Scenes/WeaponUpgradeScene.unity
-    guid: 0783ba91ac455d94284bfb8f7b782ef7
   - enabled: 1
     path: Assets/Scenes/DungeonGenerator.unity
     guid: c58aca85c26a111429fba0495ad9a289

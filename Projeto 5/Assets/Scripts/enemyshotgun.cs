@@ -6,7 +6,7 @@ using UnityEngine;
 public class enemyshotgun : MonoBehaviour
 {
    [Header("Stats")]
-   private float speed = 5f;
+   private float speed = 7f;
    [SerializeField] private float stoppingDistance;
    [SerializeField] private float startTimeBtwShots;
    private float timeBtwShots;
