@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WeaponUpgradeScene.unity
     guid: 0783ba91ac455d94284bfb8f7b782ef7
+  - enabled: 1
+    path: Assets/Scenes/DungeonGenerator.unity
+    guid: c58aca85c26a111429fba0495ad9a289
+  - enabled: 1
+    path: Assets/Scenes/DeadScene.unity
+    guid: e5b6a9a090b76914da3cdcd10e4f5c6d
   m_configObjects: {}
