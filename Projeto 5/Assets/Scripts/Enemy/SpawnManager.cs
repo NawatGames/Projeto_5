@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    [SerializeField] private Transform[] spawnPoints;
+    
     [SerializeField] private float time;
     [SerializeField] private float repeatRate;
+    private bool run = false;
+    private int rand;
+    
     
 
-    [SerializeField] GameObject enemy;
+    [SerializeField] GameObject[] enemy;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +21,18 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnEnemies()
     {
-        int index = Random.Range(0, spawnPoints.Length);
-        Instantiate(enemy, spawnPoints[index].position, Quaternion.identity);
+        if (!run)
+        {
+            rand = UnityEngine.Random.Range(1, 100);
+            if (rand < 50)
+            {
+                int index_enemy = Random.Range(0, enemy.Length);
+                Instantiate(enemy[index_enemy], transform.position, Quaternion.identity);
+            }
+            
+            run = true;
+        }
+        
+        
     }
 }

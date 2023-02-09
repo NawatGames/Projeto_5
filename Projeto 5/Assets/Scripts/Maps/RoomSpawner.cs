@@ -21,11 +21,13 @@ public class RoomSpawner: MonoBehaviour
     private int testchance;
     static int test4 = 0;
 
+    
+
     private void Start()
     {
         Destroy(gameObject,waitTime);
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
-        Invoke("Spawn",1f);
+        Invoke("Spawn",0.3f);
     }
 
     private void Spawn()
@@ -198,8 +200,13 @@ public class RoomSpawner: MonoBehaviour
             }
             spawned = true;
         }
+
         
-        
+    }
+    public void Restart()
+    {
+        roomCount = 0;
+        test4 = 0;
     }
 
     //private void OnTriggerEnter2D(Collider2D other)

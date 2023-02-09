@@ -194,7 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   stoppingDistance: 5
-  startTimeBtwShots: 0.5
+  startTimeBtwShots: 1
   retreatDistance: 4
   bullet: {fileID: 2540992392671430729, guid: 271bddfbca6483346aaac91ff40a028a, type: 3}
   firepoint: {fileID: 2708660199385748144}

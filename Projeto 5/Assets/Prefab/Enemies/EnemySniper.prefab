@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6997018187331462878}
   - component: {fileID: 6997018187331462877}
   - component: {fileID: 6997018187331462876}
+  - component: {fileID: 2882934142068161667}
   m_Layer: 0
   m_Name: EnemySniper
   m_TagString: Enemy
@@ -137,10 +138,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   stoppingDistance: 15
-  startTimeBtwShots: 1
+  startTimeBtwShots: 1.5
   retreatDistance: 4
   firepoint: {fileID: 6997018188500905487}
   bullet: {fileID: 2540992392671430729, guid: 271bddfbca6483346aaac91ff40a028a, type: 3}
+--- !u!114 &2882934142068161667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6997018187331462867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c097bdb449ff2194e99dfc85c47f6e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  drops:
+  - {fileID: 8290486087171110280, guid: d1ed19206908ee54d99f3b07592a4644, type: 3}
 --- !u!1 &6997018188500905486
 GameObject:
   m_ObjectHideFlags: 0

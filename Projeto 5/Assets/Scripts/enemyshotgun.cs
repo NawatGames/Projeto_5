@@ -6,7 +6,7 @@ using UnityEngine;
 public class enemyshotgun : MonoBehaviour
 {
    [Header("Stats")]
-   [SerializeField] private float speed;
+   private float speed = 5f;
    [SerializeField] private float stoppingDistance;
    [SerializeField] private float startTimeBtwShots;
    private float timeBtwShots;
@@ -43,6 +43,15 @@ public class enemyshotgun : MonoBehaviour
       else if (Vector2.Distance(transform.position, player.position) < retreatDistance)
       {
          transform.position = Vector2.MoveTowards(transform.position, player.position, -speed * Time.deltaTime);
+      }
+      
+      if (Vector2.Distance(transform.position, player.position) >= 10)
+      {
+         this.speed = 0;
+      }
+      else
+      {
+         speed = 5f;
       }
       
       if (timeBtwShots <= 0 && Vector2.Distance(transform.position, player.position) < stoppingDistance && Vector2.Distance(transform.position, player.position) > retreatDistance)
