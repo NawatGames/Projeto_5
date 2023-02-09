@@ -24,7 +24,7 @@ public class SpawnManager : MonoBehaviour
         if (!run)
         {
             rand = UnityEngine.Random.Range(1, 100);
-            if (rand < 50)
+            if (rand < 40)
             {
                 int index_enemy = Random.Range(0, enemy.Length);
                 Instantiate(enemy[index_enemy], transform.position, Quaternion.identity);

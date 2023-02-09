@@ -13,8 +13,8 @@ public class NewShootingScript : MonoBehaviour
     private float nextFire = 0f;
     public Camera mainCamera;
     public float fireangle;
-    public int bulletCount = 10;
-    public float spreadAngle = 10f;
+    public int bulletCount = 2;
+    public float spreadAngle = 2f;
     public float bulletSpeed = 10f;
 
     void Update()
@@ -56,5 +56,14 @@ public class NewShootingScript : MonoBehaviour
                 Transform bullet = Instantiate(bulletprefab, transform.position, rotation);
                 bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * bulletSpeed;
             }
+    }
+    
+    public void FirepointUpgrade()
+    {
+        bulletCount++;
+        if (spreadAngle < 10)
+        {
+            spreadAngle+= 1.5f;
+        }
     }
 }

@@ -10,7 +10,7 @@ public class EnemyHealth : MonoBehaviour
     private float health = 0f;
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private GameObject[] drops;
-    
+    private int rand;
 
     // Start is called before the first frame update
     void Start()
@@ -42,8 +42,16 @@ public class EnemyHealth : MonoBehaviour
 
     void RandomDrop()
     {
-        int index = Random.Range(0, drops.Length);
-        Instantiate(drops[index], transform.position, transform.rotation);
+        rand = UnityEngine.Random.Range(0, 100);
+        if (rand < 30)
+        {
+            Instantiate(drops[0], transform.position, transform.rotation);
+        }
+        else
+        {
+            Instantiate(drops[1], transform.position, transform.rotation);
+        }
+
         
     }
     

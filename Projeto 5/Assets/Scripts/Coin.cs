@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+    public float heal;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,8 @@ public class Coin : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
+            col.gameObject.GetComponent<PlayerHealth>().UpdateHealth(heal);
+            
             Destroy(gameObject);
         }
     }

@@ -18,6 +18,7 @@ public class PlayerHealth : MonoBehaviour
     public void UpdateHealth(float mod)
     {
         health += mod;
+        Debug.Log(health);
 
         if (health > maxHealth)
         {

@@ -186,4 +186,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   drops:
+  - {fileID: 9040145509823708126, guid: fc7c4d4a0a289a94ab4f146a35acea12, type: 3}
   - {fileID: 8290486087171110280, guid: d1ed19206908ee54d99f3b07592a4644, type: 3}

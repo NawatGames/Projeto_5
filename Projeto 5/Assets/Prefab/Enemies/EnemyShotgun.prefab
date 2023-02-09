@@ -192,7 +192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b9ce14a3c6d6042913a0d56d631dbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   stoppingDistance: 5
   startTimeBtwShots: 1
   retreatDistance: 4
@@ -270,4 +269,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   drops:
+  - {fileID: 638093155678073660, guid: 8011078dc89fa684e9fa103dd29922f1, type: 3}
   - {fileID: 8290486087171110280, guid: d1ed19206908ee54d99f3b07592a4644, type: 3}

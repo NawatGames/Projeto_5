@@ -5,6 +5,7 @@ using UnityEngine;
 public class WeaponUpgrader : MonoBehaviour
 {
     public int randomizer;
+    public NewShootingScript shootingScript;
 
     void Start()
     {
@@ -27,11 +28,21 @@ public class WeaponUpgrader : MonoBehaviour
             Debug.Log("DMG");
         }
 
-        if(collision.gameObject.tag == "FirePoint" && StateNameController.sncfirepoint < 2)
+        if(collision.gameObject.tag == "FirePoint")
         {
-            StateNameController.sncfirepoint++;
-            Debug.Log("Firepoint");
+            if(StateNameController.sncfirepoint < 2)
+            {
+                StateNameController.sncfirepoint++;
+                Debug.Log(StateNameController.sncfirepoint);
+            }
+            else
+            {
+                shootingScript.FirepointUpgrade();
+                Debug.Log(shootingScript.bulletCount);
+            }
         }
+
+        
 
         //if(collision.gameObject.tag == "FirePoint" && StateNameController.sncfirepoint >= 2)
         //{

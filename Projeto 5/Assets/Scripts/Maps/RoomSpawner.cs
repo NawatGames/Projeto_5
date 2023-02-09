@@ -149,27 +149,27 @@ public class RoomSpawner: MonoBehaviour
             {
                 if (openingDirection == 1)
                 {
-                    rand = (UnityEngine.Random.Range(0, 100) % 6) + 1;
+                    rand = (UnityEngine.Random.Range(0, 100) % 3) + 1;
                     Instantiate(templates.bottomRooms[rand], transform.position, templates.bottomRooms[rand].transform.rotation);
                 }
                 else if (openingDirection == 2)
                 {
                     // Need to spawn a room with a TOP door.
-                    rand = (UnityEngine.Random.Range(0, 100) % 6) + 1;
+                    rand = (UnityEngine.Random.Range(0, 100) % 3) + 1;
                     Instantiate(templates.topRooms[rand], transform.position, templates.topRooms[rand].transform.rotation);
 
                 }
                 else if (openingDirection == 3)
                 {
                     // Need to spawn a room with a LEFT door.
-                    rand = (UnityEngine.Random.Range(0, 100) % 6) + 1;
+                    rand = (UnityEngine.Random.Range(0, 100) % 3) + 1;
                     Instantiate(templates.leftRooms[rand], transform.position, templates.leftRooms[rand].transform.rotation);
 
                 }
                 else if (openingDirection == 4)
                 {
                     // Need to spawn a room with a RIGHT door.
-                    rand = (UnityEngine.Random.Range(0, 100) % 6) + 1;
+                    rand = (UnityEngine.Random.Range(0, 100) % 3) + 1;
                     Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
                 }
                 roomCount++;
